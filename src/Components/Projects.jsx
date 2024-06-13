@@ -9,8 +9,8 @@ import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Link from "@mui/material/Link";
 
-import countriesImage from "../../public/imgs/Countries.png";
-import bookmarkImage from "../../public/imgs/Bookmark.png";
+import countriesImage from "/imgs/Countries.png";
+import bookmarkImage from "/imgs/Bookmark.png";
 
 import { forwardRef } from "react";
 

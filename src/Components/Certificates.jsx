@@ -16,8 +16,8 @@ import Modal from "@mui/material/Modal";
 import Backdrop from "@mui/material/Backdrop";
 import Fade from "@mui/material/Fade";
 
-import certificate1 from "../../public/imgs/ReactBasicsImg.jpeg";
-import certificate2 from "../../public/imgs/AdvancedReactImg.jpeg";
+import certificate1 from "/imgs/ReactBasicsImg.jpeg";
+import certificate2 from "/imgs/AdvancedReactImg.jpeg";
 
 const Certificates = forwardRef((props, ref) => {
   const [open, setOpen] = useState([false, false]);

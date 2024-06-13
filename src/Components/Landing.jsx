@@ -4,8 +4,8 @@ import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
-import Avatar from "../../public/imgs/avatar.svg";
-import hero from "../../public/imgs/hero-devices.svg";
+import Avatar from "/imgs/avatar.svg";
+import hero from "/imgs/hero-devices.svg";
 
 function Landing() {
   return (
