@@ -165,6 +165,7 @@ if(props.loading === "normal"){
         <label style={{color:"white"}}>Email</label>
         <Field name="email">
           {({ field }) => (
+            
             <TextField
               {...field}
               placeholder="Enter your email address"
