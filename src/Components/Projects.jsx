@@ -11,6 +11,7 @@ import Link from "@mui/material/Link";
 
 import countriesImage from "/imgs/Countries.png";
 import bookmarkImage from "/imgs/Bookmark.png";
+import nadaPortfolioImage from "/imgs/NadaPortfolio.png";
 
 import { forwardRef } from "react";
 
@@ -91,6 +92,7 @@ const Projects = forwardRef((props, ref) => {
               gap: "50px",
               flexDirection: { xs: "column", sm: "column", md: "row" },
               alignItems: { xs: "center", sm: "center", md: "flex-start" },
+              mb:"100px"
             }}
           >
             <Box sx={{ minWidth: { xs: "auto", sm: "auto", md: "450px" } }}>
@@ -128,6 +130,52 @@ const Projects = forwardRef((props, ref) => {
                 currency.The overall design was easy but mangaing the API
                 requests and routing in react was the challenge in this project,
                 but it was fun to make!
+              </Typography>
+            </Box>
+          </Box>
+
+          <Box
+            sx={{
+              display: "flex",
+              gap: "50px",
+              flexDirection: { xs: "column", sm: "column", md: "row" },
+              alignItems: { xs: "center", sm: "center", md: "flex-start" },
+            }}
+          >
+            <Box sx={{ minWidth: { xs: "auto", sm: "auto", md: "450px" } }}>
+              <Link
+                href="https://drnadahelmy.netlify.app"
+                target="_blank"
+              >
+                <img
+                  src={nadaPortfolioImage}
+                  alt="countries"
+                  className="projectsimg"
+                  style={{
+                    borderRadius: "5px",
+                    cursor: "pointer",
+                  }}
+                />
+              </Link>
+            </Box>
+            <Box
+              sx={{
+                maxWidth: "600px",
+                textAlign: { xs: "center", sm: "center", md: "left" },
+              }}
+            >
+              <Typography
+                variant="h3"
+                color="text.secondary"
+                sx={{ mb: { xs: "15px", sm: "15px", md: "30px" } }}
+              >
+                Dr Nada Helmy Portfolio
+              </Typography>
+              <Typography variant="body1" color="text.secondary">
+                Dr Nada wanted to make a unique and simple portfolio at the same
+                time showcasing her projects and skills. I worked in this
+                project on reducing dependencies as much as possible as she
+                wanted to make it smooth and fast as possible.
               </Typography>
             </Box>
           </Box>

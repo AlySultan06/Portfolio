@@ -133,6 +133,7 @@ if(props.loading === "normal"){
           {({ field }) => (
             <TextField
               {...field}
+             
               placeholder="Enter your name here"
               fullWidth
               error={touched.name && !!errors.name}
