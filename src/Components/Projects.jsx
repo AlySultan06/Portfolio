@@ -10,7 +10,7 @@ import Container from "@mui/material/Container";
 import Link from "@mui/material/Link";
 
 import countriesImage from "/imgs/Countries.png";
-import bookmarkImage from "/imgs/Bookmark.png";
+import quranImage from "/imgs/quran.png";
 import nadaPortfolioImage from "/imgs/NadaPortfolio.png";
 
 import { forwardRef } from "react";
@@ -42,6 +42,7 @@ const Projects = forwardRef((props, ref) => {
         </Box>
 
         <Stack row="column">
+          {/* project1 */}
           <Box
             sx={{
               display: "flex",
@@ -52,10 +53,10 @@ const Projects = forwardRef((props, ref) => {
             }}
           >
             <Box sx={{ minWidth: { xs: "auto", sm: "auto", md: "450px" } }}>
-              <Link href="https://bookmark200.netlify.app/" target="_blank">
+              <Link href="https://ahlelquranacademy.netlify.app/" target="_blank">
                 <img
-                  src={bookmarkImage}
-                  alt="countries"
+                  src={quranImage}
+                  alt="quran"
                   className="projectsimg"
                   style={{
                     borderRadius: "5px",
@@ -64,6 +65,7 @@ const Projects = forwardRef((props, ref) => {
                 />
               </Link>
             </Box>
+
             <Box
               sx={{
                 maxWidth: "600px",
@@ -75,24 +77,25 @@ const Projects = forwardRef((props, ref) => {
                 color="text.secondary"
                 sx={{ mb: { xs: "15px", sm: "15px", md: "30px" } }}
               >
-                Bookmark.com
+                Ahlelquran-online academy
               </Typography>
               <Typography variant="body1" color="text.secondary">
-                This was my first project to work on, i faced some diffilculties
-                at first to make the website responsive especially with all hese
-                transitions onscroll , but i managed to finish it and deliver it
-                to the client on time.
+                Ahlelquran-online is an online academy for teaching quran. I
+                worked on this website to make the user experience as smooth as
+                possible using the AOS libary to encourage the user to make more activities on the
+                website
               </Typography>
             </Box>
           </Box>
 
+          {/* project2 */}
           <Box
             sx={{
               display: "flex",
               gap: "50px",
               flexDirection: { xs: "column", sm: "column", md: "row" },
               alignItems: { xs: "center", sm: "center", md: "flex-start" },
-              mb:"100px"
+              mb: "100px",
             }}
           >
             <Box sx={{ minWidth: { xs: "auto", sm: "auto", md: "450px" } }}>
@@ -134,6 +137,7 @@ const Projects = forwardRef((props, ref) => {
             </Box>
           </Box>
 
+          {/* project3 */}
           <Box
             sx={{
               display: "flex",
@@ -143,10 +147,7 @@ const Projects = forwardRef((props, ref) => {
             }}
           >
             <Box sx={{ minWidth: { xs: "auto", sm: "auto", md: "450px" } }}>
-              <Link
-                href="https://drnadahelmy.netlify.app"
-                target="_blank"
-              >
+              <Link href="https://drnadahelmy.netlify.app" target="_blank">
                 <img
                   src={nadaPortfolioImage}
                   alt="countries"

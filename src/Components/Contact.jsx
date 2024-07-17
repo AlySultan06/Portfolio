@@ -139,23 +139,24 @@ if(props.loading === "normal"){
               error={touched.name && !!errors.name}
               InputLabelProps={{ shrink: false }}
               helperText={touched.name && errors.name}
-              sx={{'&:hover':{border:"none"}, "& .MuiInputBase-input::placeholder": {
+              sx={{'&:hover':{border:"none"}, 
+              "& .MuiInputBase-input::placeholder": {
                 color: "white",  // Change placeholder color here
-                opacity: 0.4,  // Ensure placeholder is fully opaque
+                opacity: 0.4,
+                 
               },
               
               "& .MuiInputBase-input":{
-                color:"white"
+                color:"white",
+              
               }
-              
-              
-              
-              
-              
-              
-              
-              
-              
+,
+              "& .MuiOutlinedInput-root":{
+                "& fieldset":{}
+                
+              }
+          
+
               ,mb:"10px"}}  // Add custom styling here
             />
           )}
